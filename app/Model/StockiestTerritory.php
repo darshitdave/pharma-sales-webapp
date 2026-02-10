@@ -1,0 +1,13 @@
+<?php
+
+namespace App\Model;
+
+use Illuminate\Database\Eloquent\Model;
+
+class StockiestTerritory extends Model
+{
+    public function territory_name(){
+        return $this->hasOne('App\Model\Territory','id','territories_id');
+    }
+    
+}
